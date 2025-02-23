@@ -23,7 +23,8 @@ export function FormTask() {
 			setToken(storedToken);
 		}
 		const apiToken = '317ad1fc-e0a9-11ef-a978-0242ac120007'; // ТОКЕН
-		localStorage.setItem('apiToken', apiToken);
+		setToken(apiToken);
+		localStorage.setItem('authToken', apiToken);
 	}, [setToken]);
 
 	function onChangeInput(
